@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://dummyjson.com/products";
+// const BASE_URL = "https://dummyjson.com/products";
 
 export const fetchProducts = async (page = 1, filters = {}, sort = "") => {
   const skip = (page - 1) * 30; // Ensure 'page' is initialized
