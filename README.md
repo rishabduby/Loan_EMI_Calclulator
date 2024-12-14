@@ -37,3 +37,6 @@ Responsive Design: The app is fully responsive and provides a great experience o
 ### Optimized Image Loading
 
 Optimized Image Loading: Images are loaded lazily to minimize page load time and improve performance.
+
+### Deployed hosted link 
+https://rishabduby.github.io/ecommerce-dashboard/
