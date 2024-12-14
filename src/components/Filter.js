@@ -4,7 +4,8 @@ import {
   FaDollarSign,
   FaStar,
   FaSortAmountDown,
-  FaSortAmountUp,
+  // FaSortAmountUp,
+  FaTimesCircle // Icon for Clear button
 } from "react-icons/fa"; // Import icons for UI
 import "./Filter.css";
 
