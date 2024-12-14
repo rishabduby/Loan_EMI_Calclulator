@@ -1,0 +1,100 @@
+/* Container for the filter section */
+.filters-container {
+  margin-bottom: 16px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  ); /* Make grid responsive */
+  gap: 16px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Individual filter items (select, input fields) */
+.filter-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #fff;
+  width: 100%; /* Ensure it occupies full width available */
+}
+
+.filter-item input,
+.filter-item select {
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.filter-item select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Focus styles */
+.filter-item input:focus,
+.filter-item select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Icon style (used for the filter) */
+.filter-icon {
+  font-size: 18px;
+  color: #007bff;
+  margin-right: 8px; /* Space between icon and the input/select field */
+}
+
+/* Apply button styles */
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensure full width */
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+.clear-icon {
+  font-size: 18px; /* Size of the icon */
+}
+
+/* Show the button when a filter is applied */
+.clear-btn.visible {
+  display: flex;
+}
+
+/* Additional responsiveness (if needed) */
+@media (max-width: 768px) {
+  .clear-btn {
+    width: 100%; /* Make button full width on small screens */
+  }
+}
+
+/* Additional responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .filters-container {
+    grid-template-columns: 1fr; /* Single column for mobile devices */
+  }
+
+  .apply-btn {
+    width: auto; /* Allow button to have natural width on smaller screens */
+  }
+}
